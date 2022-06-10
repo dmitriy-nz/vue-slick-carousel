@@ -1,6 +1,6 @@
 {
   "name": "vue-slick-carousel",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Vue Slick Carousel with True SSR Written for Faster Luxstay",
   "keywords": [
     "vue",
@@ -19,7 +19,7 @@
   "author": "KyuWoo Choi <kyuwoo.choi@gmail.com> (https://kyu.io/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gs-shop/vue-slick-carousel.git"
+    "url": "https://github.com/dmitriy-nz/vue-slick-carousel.git"
   },
   "scripts": {
     "serve": "vue-cli-service serve --open",
@@ -29,7 +29,8 @@
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:watch": "vue-cli-service test:unit --watch",
-    "release": "semantic-release --no-ci"
+    "release": "semantic-release --no-ci",
+    "postinstall": "npm run build"
   },
   "main": "dist/vue-slick-carousel.umd.js",
   "dependencies": {
