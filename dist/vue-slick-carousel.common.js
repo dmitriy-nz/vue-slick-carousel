@@ -8932,6 +8932,8 @@ var getTrackLeft = function getTrackLeft(spec) {
     if (centerMode) {
       slidesToOffset += parseInt(slidesToShow / 2);
     }
+
+    slidesToOffset = -Math.floor(Math.abs(slidesToOffset));
   } else {
     if (slideCount % slidesToScroll !== 0 && slideIndex + slidesToScroll > slideCount) {
       slidesToOffset = slidesToShow - slideCount % slidesToScroll;
@@ -8942,7 +8944,6 @@ var getTrackLeft = function getTrackLeft(spec) {
     }
   }
 
-  slidesToOffset = -Math.floor(Math.abs(slidesToOffset));
   slideOffset = slidesToOffset * slideWidth;
   verticalOffset = slidesToOffset * slideHeight;
 
