@@ -124,7 +124,7 @@ export default {
           : { min: 200, max: 400 }
 
       return Array.from(
-        { length: this.config.numSlides || 6 },
+        { length: this.config.numSlides || 20 },
         () => Math.floor(Math.random() * (max - min)) + min,
       )
     },
